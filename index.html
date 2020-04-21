@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+	<script src="script.js" defer></script>
+	<link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div class="container">
+		<h1 class="title_text">timer</h1>
+	</div>
+	<div class="container">
+	<div class="container_check">
+		<form id="form_timer" action="">
+
+			<p><input id="inp_twomin" type="checkbox" onclick="checkTwo()">2 минуты</p>
+			<p><input id="inp_onemin" type="checkbox" onclick="checkOne()">1 минуты</p>
+			<p><input id="inp_thirtysec" type="checkbox" onclick="thirtySec()">30 секунд</p>
+		</form>
+	</div>
+	<div class="container_timer">
+	<div class="minute">
+		<p id="minute">02</p>
+	</div>
+	<div class="second">
+	<p id="second">120</p>
+	</div>
+	<div class="audio">
+		<audio id="audio" src="audio/audi.mp3"></audio>
+	</div>
+	<div class="container_btn">
+		<div class="btn1">
+			<button id="stop" onclick="start2()">start</button>
+		</div>
+		<div class="btn2">
+			<button id="start" onclick="stop()">stop</button>
+		</div>
+	</div>
+	<div class="container_restart">
+		<button id="rest" onclick="restart()">Рестарт</button>
+	</div>
+	</div>
+	<div class="container_timer2">
+	<div class="minute">
+		<p id="minute1">01</p>
+	</div>
+	<div class="second">
+	<p id="second1">60</p>
+	</div>
+	<div class="audio">
+		<audio id="audio" src="audio/audi.mp3"></audio>
+	</div>
+	<div class="container_btn">
+		<div class="btn1">
+			<button id="stop" onclick="start1()">start</button>
+		</div>
+		<div class="btn2">
+			<button id="start" onclick="stop()">stop</button>
+		</div>
+	</div>
+	<div class="container_restart">
+		<button id="rest" onclick="restart()">Рестарт</button>
+	</div>
+	</div>
+	<div class="container_timer3">
+	<div class="minute">
+		<p id="minute2">0</p>
+	</div>
+	<div class="second">
+	<p id="second2">30</p>
+	</div>
+	<div class="audio">
+		<audio id="audio" src="audio/audi.mp3"></audio>
+	</div>
+	<div class="container_btn">
+		<div class="btn1">
+			<button id="stop" onclick="start()">Старт</button>
+		</div>
+		<div class="btn2">
+			<button id="start" onclick="stop()">Стоп</button>
+		</div>
+	</div>
+	<div class="container_restart">
+		<button id="rest" onclick="restart()">Рестарт</button>
+	</div>
+	</div>
+	</div>
+</body>
+</html>
